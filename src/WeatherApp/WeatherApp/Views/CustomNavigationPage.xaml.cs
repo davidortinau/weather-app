@@ -12,6 +12,7 @@ namespace WeatherApp.Views
         public CustomNavigationPage(Page root) : base(root)
         {
             InitializeComponent();
+
         }
     }
 }

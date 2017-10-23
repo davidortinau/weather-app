@@ -15,29 +15,29 @@ namespace WeatherApp.Converters
 
             if (condition.Contains("cloud"))
             {
-                if (Device.RuntimePlatform == Device.GTK)
-                    return "Images/clouds-background.jpg";
-                else if (Device.RuntimePlatform == Device.UWP)
-                    return "Assets/clouds-background.jpg";
-                else
+                //if (Device.RuntimePlatform == Device.GTK)
+                //    return "Images/clouds-background.jpg";
+                //else if (Device.RuntimePlatform == Device.UWP)
+                //    return "Assets/clouds-background.jpg";
+                //else
                     return "clouds-background.jpg";
             }
             else if (condition.Contains("rain"))
             {
-                if (Device.RuntimePlatform == Device.GTK)
-                    return "Images/rain-background.jpg";
-                else if (Device.RuntimePlatform == Device.UWP)
-                    return "Assets/rain-background.jpg";
-                else
+                //if (Device.RuntimePlatform == Device.GTK)
+                //    return "Images/rain-background.jpg";
+                //else if (Device.RuntimePlatform == Device.UWP)
+                //    return "Assets/rain-background.jpg";
+                //else
                     return "rain-background.jpg";
             }
             else if (condition.Contains("sun") || (condition.Contains("clear sky")))
             {
-                if (Device.RuntimePlatform == Device.GTK)
-                    return "Images/sun-background.jpg";
-                else if (Device.RuntimePlatform == Device.UWP)
-                    return "Assets/sun-background.jpg";
-                else
+                //if (Device.RuntimePlatform == Device.GTK)
+                //    return "Images/sun-background.jpg";
+                //else if (Device.RuntimePlatform == Device.UWP)
+                //    return "Assets/sun-background.jpg";
+                //else
                     return "sun-background.jpg";
             }
             else
