@@ -87,8 +87,6 @@
             <ActivityIndicator
                 IsVisible="{Binding IsBusy}"
                 IsRunning="{Binding IsBusy}"
-                Color="{StaticResource AccentColor}"
-                BackgroundColor="{StaticResource WhiteColor}"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"/>
         </Grid>
