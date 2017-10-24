@@ -4,24 +4,27 @@ using Xamarin.Forms.Xaml;
 
 namespace WeatherApp.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class WeatherView : ContentPage
-    {
-        public WeatherView()
-        {
-            InitializeComponent();
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class WeatherView : ContentPage
+	{
+		public WeatherView()
+		{
+			InitializeComponent();
 
-            BindingContext = new WeatherViewModel();
-        }
+			BindingContext = new WeatherViewModel
+			{
+				Navigation = Navigation
+			};
+		}
 
-        protected override async void OnAppearing()
-        {
-            if (BindingContext is WeatherViewModel)
-            {
-                await ((WeatherViewModel)BindingContext).GetWeatherAsync();
-            }
+		protected override async void OnAppearing()
+		{
+			if (BindingContext is WeatherViewModel)
+			{
+				await ((WeatherViewModel)BindingContext).GetWeatherAsync();
+			}
 
-            base.OnAppearing();
-        }
-    }
+			base.OnAppearing();
+		}
+	}
 }

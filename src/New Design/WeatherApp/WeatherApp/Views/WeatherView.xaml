@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WeatherApp.Views.WeatherView"   
@@ -28,9 +28,13 @@
     </ContentPage.Resources>
     <ContentPage.ToolbarItems>
         <ToolbarItem 
-            Icon="Images/reload.png"
-            Text="Reaload"
+            Icon="reload.png"
+            Text="Reload"
             Command="{Binding ReloadCommand}"/>
+        <ToolbarItem 
+            Icon="glyphish_74_location.png"
+            Text="Location"
+            Command="{Binding GetCurrentLocationCommand}"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <Grid
